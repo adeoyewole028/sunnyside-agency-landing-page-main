@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link
       rel="icon"
@@ -45,40 +46,37 @@
 
   <body class="font-body">
     <section class="visible">
-      <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-         
-          <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
-        </div>
-        <div class="block lg:hidden">
-          <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-          </button>
-        </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div class="text-sm lg:flex-grow">
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-              Docs
-            </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-              Examples
-            </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-              Blog
-            </a>
+      
+      <nav class="flex items-center justify-between flex-wrap bg-teal-500">
+        <div class="z-40 flex justify-between gap-96 space-x-96 pl-6 pt-5">
+          <div class="flex items-center flex-shrink-0 text-red mr-6">         
+            <span class="font-semibold text-xl tracking-tight">sunnyside</span>
           </div>
-          <div>
-            <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
+          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 text-white mr-4 px-4">
+                About
+              </a>
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 text-white mr-4 px-4">
+                Services
+              </a>
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 text-white px-4">
+                Projects
+              </a>
+              <a href="#responsive-header" class="gfont bg-white hover:bg-blue-300 hover:text-white rounded-full block mt-4 lg:inline-block lg:mt-0  font-bold uppercase hover:bg-red px-6 py-2">
+                Contact
+              </a>
+            </div>
           </div>
         </div>
       </nav>
 
 
-      <div class="grid grid-rows-7">
+      <div class="-z-20 grid grid-rows-7 -mt-14">
         <div>
           <img src="../images/desktop/image-header.jpg" alt="" />
 
-          <img class="z-40" src="../images/icon-arrow-down.svg" alt="">
+          <img class="" src="../images/icon-arrow-down.svg" alt="">
         </div>
         <div class="text-white absolute top-32 text-center items-center w-full">
 
@@ -307,28 +305,24 @@
       <div class="">
         <img src="../images/mobile/image-header.jpg" alt="" />
       </div>
-      <header class="absolute flex top-0 mt-5 px-7">
+      <header class="absolute w-full flex top-0 mt-5 px-7 justify-between">
         <div class="font-body font-extrabold text-2xl text-white">
           sunnyside
         </div>
-        <div class="flex items-center hidden">
-          <div>About</div>
-          <div>Services</div>
-          <div>Projects</div>
-          <div>Contact</div>
+        <div class="cursor-pointer md:hidden text-white">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="items-center hidden md:flex">
+          <div class="p-1 mr-5">About</div>
+          <div class="p-1 mr-5">Services</div>
+          <div class="p-1 mr-5">Projects</div>
+          <div class="p-1 bg-white rounded-full px-4">Contact</div>
         </div>
       </header>
 
-      <div class="text-white absolute top-32 text-center items-center w-full">
-        <h1
-          class="
-            text-4xl
-            font-main
-            uppercase
-            tracking-widest
-            font-extrabold
-            px-3
-          "
+      <div class="text-white absolute top-36 text-center items-center w-full">
+        <div
+          class="text-4xl font-main uppercase tracking-widest font-extrabold px-3"
         >
           We are creatives
         </h1>
@@ -350,7 +344,7 @@
         </section>
 
         <div class="text-center flex flex-col py-16">
-          <h1 class="text-4xl font-main">Transform your brand</h1>
+          <h1 class="text-4xl font-main text-title_text_color">Transform your brand</h1>
           <p class="p-4 text-gray-500 font-semibold">
             We are a full-service creative agency specializing in helping brands
             grow fast. Engage your clients through compelling visuals that do
@@ -371,7 +365,7 @@
       </div>
 
       <div class="text-center flex flex-col py-12">
-        <h1 class="text-4xl font-main">Stand out to the right audience</h1>
+        <h1 class="text-4xl font-main text-title_text_color">Stand out to the right audience</h1>
 
         <p class="p-7 text-gray-500 font-semibold">
           Using a collaborative formula of designers, researchers,
@@ -388,12 +382,9 @@
         <img src="../images/mobile/image-graphic-design.jpg" alt="" />
 
         <div class="text-center font-main -mt-48">
-          <h1 class="text-2xl font-main">Graphic design</h1>
+          <h1 class="text-3xl font-main text-footer_title_color">Graphic design</h1>
 
-          <p
-            class="p-4 pb-10 text-gray-500 font-semibold"
-            style="font-size: 15.2px; font-family: Barlow, serif"
-          >
+          <p class="p-4 px-5 pb-10 text-footer_title_color font-semibold" style="font-size: 15.2px; font-family: Barlow, serif;">
             Great design makes you memorable. We deliver artwork that
             underscores your brand message and captures potential clients’
             attention.
@@ -404,12 +395,9 @@
       <div>
         <img src="../images/mobile/image-photography.jpg" alt="" />
         <div class="text-center text-gray-700 font-main -mt-48">
-          <h1 class="text-2xl font-main">Photography</h1>
+          <h1 class="text-3xl font-main text-photo_text">Photography</h1>
 
-          <p
-            class="px-3 py-6 text-gray-500 font-semibold"
-            style="font-size: 15px; font-family: Barlow, serif"
-          >
+          <p class="px-3 py-6 text-photo_text font-semibold" style="font-size: 15px; font-family: Barlow, serif;">
             Increase your credibility by getting the most stunning, high-quality
             photos that improve your business image.
           </p>
@@ -442,7 +430,7 @@
             We put our trust in Sunnyside and they delivered, making sure our
             needs were met and deadlines were always hit.
           </p>
-          <p class="gfont text-xl mt-8 mx-8 font-extrabold">Emily R.</p>
+          <p class="gfont text-xl mt-8 mx-8 font-extrabold text-title_text_color">Emily R.</p>
           <p class="mt-2 text-gray-400 font-semibold">Marketing Director</p>
         </div>
 
@@ -461,7 +449,7 @@
             brand’s success made it a satisfying and enjoyable experience.
           </p>
 
-          <p class="gfont text-xl mt-8 mx-8 font-extrabold">Thomas S.</p>
+          <p class="gfont text-xl mt-8 mx-8 font-extrabold text-title_text_color">Thomas S.</p>
 
           <p class="mt-2 text-gray-400 font-semibold">
             Chief Operating Officer
@@ -482,7 +470,7 @@
             with Sunnyside. Highly recommended!
           </p>
 
-          <p class="gfont text-xl mt-8 mx-8 font-extrabold">Jennie F.</p>
+          <p class="gfont text-xl mt-8 mx-8 font-extrabold text-title_text_color">Jennie F.</p>
 
           <p class="mt-2 text-gray-400 font-semibold">Business Owner</p>
         </div>
@@ -504,11 +492,11 @@
         </div>
       </div>
 
-      <div class="py-6" style="background-color: hsl(166, 66%, 88%)">
+      <div class="py-6 bg-bg_footer">
         <div class="flex flex-col items-center px-5">
-          <h1 class="mt-8 text-gray-500 font-extrabold text-3xl">sunnyside</h1>
+          <h1 class="mt-8 text-footer_title_color font-extrabold text-3xl">sunnyside</h1>
 
-          <div class="flex space-x-10 p-10 text-xl text-gray-400 font-semibold">
+          <div class="flex space-x-10 p-10 text-xl text-footer_nav_color font-semibold">
             <a href="">About</a>
             <a href="">Services</a>
             <a href="">Projects</a>
