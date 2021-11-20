@@ -18,6 +18,7 @@ module.exports = {
         text_color: "hsl(210, 4%, 67%)",
         footer_nav_color: "hsl(168, 34%, 41%)",
       }
+      
     },
   },
   variants: {
