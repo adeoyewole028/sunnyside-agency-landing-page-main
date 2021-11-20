@@ -69,8 +69,9 @@
   </head>
 
   <body class="font-body">
-    <section id="Desktop-Design" class="">
-      <div class="grid grid-rows-8 sm:hidden">
+    <!-- Desktop Design View -->
+    <section id="Desktop-Design" class="hidden md:block">
+      <div class="grid grid-rows-8">
         <nav class="z-40 static flex justify-between p-8">
           <div class="">
             <span class="font-semibold text-white text-2xl tracking-tight"
@@ -364,36 +365,11 @@
     <!-- Mobile View Section -->
 
     <section class="sm:visible md:hidden lg:hidden">
-      <div class="block lg:hidden">
-        <button
-          class="
-            flex
-            items-center
-            px-3
-            py-2
-            border
-            rounded
-            text-teal-200
-            border-teal-400
-            hover:text-white hover:border-white
-          "
-        >
-          <svg
-            class="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-      </div>
-
       <div class="">
         <img src="../images/mobile/image-header.jpg" alt="" />
       </div>
 
-      <header class="absolute w-full top-0 mt-5 px-7 justify-between">
+      <header class="absolute w-full top-0 mt-3 px-7 justify-between">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="font-body font-extrabold text-2xl block text-white">
             sunnyside
@@ -472,7 +448,7 @@
           We are creatives
         </h1>
         <section>
-          <div class="mt-20">
+          <div class="mt-16">
             <img
               src="../images/icon-arrow-down.svg"
               alt=""
