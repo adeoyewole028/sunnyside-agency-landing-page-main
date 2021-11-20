@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link
       rel="icon"
@@ -13,14 +14,15 @@
       href="../images/favicon-32x32.png"
     />
 
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+    <!--Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-    <link rel = "stylesheet"
-    href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
-    </script>
-    <script src= "https://maxcdn.bootstrapdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
-    </script>
+    
    
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -42,6 +44,18 @@
         font-family: "Barlow", sans-serif;
         font-family: "Fraunces", serif;
       }
+
+      div.dropdown-menu>div{
+        width: 80vw;
+        text-align: center;
+        position: relative;
+      }
+
+      .padit{
+        padding: 2vw
+      }
+
+     
     </style>
   </head>
 
@@ -51,48 +65,56 @@
       <div class="">
         <img src="../images/mobile/image-header.jpg" alt="" />
       </div>
-     
-      <header class="absolute flex top-0 mt-5 px-7">
-        <nav>
-        <div class="font-body font-extrabold text-2xl text-white">
-          sunnyside
-        </div>
 
-        <div class = "dropdown">
-          <button data-collapse-toggle="mobile-menu" aria-controls= "mobile-menu-2" aria-expanded="false" id = "dropdownButton" data-dropdown-toggle = "dropdown" 
-          class = ""
-           type = "button" >
-            <img src = "../images/icon-hamburger.svg" class = "items-center">
-          </button>
-
-          <div id = "mobile-menu" class = "hidden bg-white dropdown-menu inline-flex items-center">
-            <ul class = "" aria-labelledby="dropdownButton">
-            <li>
-            <a class = "" href = "#">About</a>
-            </li>
-            <li>
-            <a class = "" href = "#">Service</a>
-            </li>
-            <li>
-            <a class = "" href = "#">Projects</a>
-            </li>
-            <li>
-            <a class = "" href = "#">Contact</a>
-            </li>
-            </ul>
+      <header class="absolute w-full  top-0 mt-5 px-7 justify-between">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <div class="font-body font-extrabold text-2xl block text-white">
+            sunnyside
           </div>
-        </div>
+          <div class="cursor-pointer md:hidden text-white inline-block nav-item dropdown">
+            <button class= "" type="button" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              <img src = "../images/icon-hamburger.svg" class = "items-center block">
+            </button>
+            <div class="dropdown-menu dropdown-menu-end" role="menu" aria-labelledby="navbarDropdown">
 
-        <div class="flex items-center hidden">
-          <div>About</div>
-          <div>Services</div>
-          <div>Projects</div>
-          <div>Contact</div>
-        </div>
-      </nav>
+              <div class =padit></div>
+
+              <div class="p-1  text-center ">
+                <a class="dropdown-item" href="#">About</a>
+              </div>
+
+              <div class =padit></div>
+
+              <div class="p-1 ">
+                <a class="dropdown-item" href="#">Services</a>
+              </div>
+
+              <div class =padit></div>
+
+              <div class="p-1 ">
+                <a class="dropdown-item" href="#">Projects</a>
+              </div>
+
+              <div class =padit></div>
+              
+              <div>
+                <div class="p-1 bg-yellow-400 rounded-full px-10 mx-40">
+                    <a class="dropdown-item" href="#">CONTACT</a>
+                </div>
+              </div>
+
+              <div class =padit></div>
+              
+            </div>
+          </div>
+         
+            
+
+          </div>
+        </nav>
       </header>
 
-      <div class="text-white absolute top-32 text-center items-center w-full">
+      <div class="text-white absolute top-36 text-center items-center w-full">
         <div
           class="text-4xl font-main uppercase tracking-widest font-extrabold px-3"
         >
@@ -114,7 +136,7 @@
         </section>
 
         <div class="text-center flex flex-col py-16">
-          <h1 class="text-4xl font-main">Transform your brand</h1>
+          <h1 class="text-4xl font-main text-title_text_color">Transform your brand</h1>
           <p class="p-4 text-gray-500 font-semibold">
             We are a full-service creative agency specializing in helping brands
             grow fast. Engage your clients through compelling visuals that do
@@ -129,7 +151,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
 
       <div class="text-center flex flex-col py-12">
-        <h1 class="text-4xl font-main">Stand out to the right audience</h1>
+        <h1 class="text-4xl font-main text-title_text_color">Stand out to the right audience</h1>
 
         <p class="p-7 text-gray-500 font-semibold">
           Using a collaborative formula of designers, researchers,
@@ -146,9 +168,9 @@
         <img src="../images/mobile/image-graphic-design.jpg" alt="" />
 
         <div class="text-center font-main -mt-48">
-          <h1 class="text-2xl font-main">Graphic design</h1>
+          <h1 class="text-3xl font-main text-footer_title_color">Graphic design</h1>
 
-          <p class="p-4 pb-10 text-gray-500 font-semibold" style="font-size: 15.2px; font-family: Barlow, serif;">
+          <p class="p-4 px-5 pb-10 text-footer_title_color font-semibold" style="font-size: 15.2px; font-family: Barlow, serif;">
             Great design makes you memorable. We deliver artwork that
             underscores your brand message and captures potential clients’
             attention.
@@ -165,9 +187,9 @@
       <div>
         <img src="../images/mobile/image-photography.jpg" alt="" />
         <div class="text-center text-gray-700 font-main -mt-48">
-          <h1 class="text-2xl font-main">Photography</h1>
+          <h1 class="text-3xl font-main text-photo_text">Photography</h1>
 
-          <p class="px-3 py-6 text-gray-500 font-semibold" style="font-size: 15px; font-family: Barlow, serif;">
+          <p class="px-3 py-6 text-photo_text font-semibold" style="font-size: 15px; font-family: Barlow, serif;">
             Increase your credibility by getting the most stunning, high-quality
             photos that improve your business image.
           </p>
@@ -199,7 +221,7 @@
             We put our trust in Sunnyside and they delivered, making sure our
             needs were met and deadlines were always hit.
           </p>
-          <p class="gfont text-xl mt-8 mx-8 font-extrabold">Emily R.</p>
+          <p class="gfont text-xl mt-8 mx-8 font-extrabold text-title_text_color">Emily R.</p>
           <p class="mt-2 text-gray-400 font-semibold">Marketing Director</p>
         </div>
 
@@ -212,7 +234,7 @@
             Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
           </p>
 
-          <p class="gfont text-xl mt-8 mx-8 font-extrabold">Thomas S.</p>
+          <p class="gfont text-xl mt-8 mx-8 font-extrabold text-title_text_color">Thomas S.</p>
 
           <p class="mt-2 text-gray-400 font-semibold">
             Chief Operating Officer
@@ -228,7 +250,7 @@
             with Sunnyside. Highly recommended!
           </p>
 
-          <p class="gfont text-xl mt-8 mx-8 font-extrabold">Jennie F.</p>
+          <p class="gfont text-xl mt-8 mx-8 font-extrabold text-title_text_color">Jennie F.</p>
 
           <p class="mt-2 text-gray-400 font-semibold">Business Owner</p>
         </div>
@@ -263,17 +285,17 @@
     </div>
 
 
-      <div class="py-6" style="background-color: hsl(166, 66%, 88%)">
+      <div class="py-6 bg-bg_footer">
         <div class="flex flex-col items-center px-5">
-          <h1 class="mt-8 text-gray-500 font-extrabold text-3xl">sunnyside</h1>
+          <h1 class="mt-8 text-footer_title_color font-extrabold text-3xl">sunnyside</h1>
 
-          <div class="flex space-x-10 p-10 text-xl text-gray-400 font-semibold">
+          <div class="flex space-x-10 p-10 text-xl text-footer_nav_color font-semibold">
             <a href="">About</a>
             <a href="">Services</a>
             <a href="">Projects</a>
           </div>
 
-          <div class="flex space-x-6 m-5 mb-16 text-xl text-gray-500 font-semibold">
+          <div class="flex space-x-6 mb-10 mt-10 text-xl text-footer_title_color font-semibold text-2xl">
             <a href=""><i class="fab fa-facebook-square"></i></a>
             <a href=""><i class="fab fa-instagram"></i></a>
             <a href=""><i class="fab fa-twitter"></i></a>
