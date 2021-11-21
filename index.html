@@ -12,13 +12,6 @@
       crossorigin="anonymous"
     />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../images/favicon-32x32.png"
-    />
-
     <!--Bootstrap CSS-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -33,35 +26,30 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <title>Sunnyside agency landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
 
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+      /* Font style to style the learn link */
       .learn {
         font-family: "Barlow", sans-serif;
         font-family: "Fraunces", serif;
         font-size: 15px;
         text-transform: uppercase;
       }
+      /* font class to implement google font */
       .gfont {
         font-family: "Barlow", sans-serif;
         font-family: "Fraunces", serif;
       }
-
+/* Drop down styling */
       div.dropdown-menu > div {
         width: 80vw;
         text-align: center;
         position: relative;
       }
-
+/* padding for the mobile drop down menu */
       .padit {
         padding: 2vw;
       }
@@ -74,14 +62,17 @@
   <body class="font-body">
     <!-- Desktop Design View -->
     <section id="Desktop-Design" class="hidden md:block">
+     <!-- Grid layout to the entire desktop design -->
       <div class="grid grid-rows-8">
+        <!-- Desktop navigation section -->
         <nav class="z-40 static flex justify-between p-8">
+          <!-- The logo -->
           <div class="">
             <span class="font-semibold text-white text-2xl tracking-tight"
               >sunnyside</span
             >
           </div>
-
+<!-- Desktop navigation menu -->
           <div class="">
             <div class="">
               <a href="" class="no-underline text-white px-7"> About </a>
@@ -93,8 +84,7 @@
                   no-underline
                   gfont
                   lg:bg-white
-                  hover:bg-contact_hover_color
-                  hover:text-white
+                  hover:bg-contact_hover_color hover:text-white
                   rounded-full
                   font-bold
                   uppercase
@@ -136,6 +126,7 @@
             "
           >
             We are creatives
+            <!-- The arrow image -->
             <img
               class="ml-72 mt-32"
               src="./images/icon-arrow-down.svg"
@@ -160,8 +151,23 @@
                 class="no-underline text-left p-1 flex flex-col items-left"
                 href="#"
               >
-                <p class="learn z-10 text-title_text_color mb-0" style="line-height: 0;">Learn more</p>
-                <div class="rounded-full hover:bg-yellow_hover bg-yellow-200 w-28 h-2 mt-1 cursor-pointer"></div>
+                <p
+                  class="learn z-10 text-title_text_color mb-0"
+                  style="line-height: 0"
+                >
+                  Learn more
+                </p>
+                <div
+                  class="
+                    rounded-full
+                    hover:bg-yellow_hover
+                    bg-yellow-200
+                    w-28
+                    h-2
+                    mt-1
+                    cursor-pointer
+                  "
+                ></div>
               </a>
             </div>
           </div>
@@ -191,14 +197,21 @@
                 class="no-underline text-left p-1 flex flex-col items-left"
                 href="#"
               >
-                <p class="learn z-30 text-title_text_color mb-0" style="line-height: 0;">Learn more</p>
+                <p
+                  class="learn z-30 text-title_text_color mb-0"
+                  style="line-height: 0"
+                >
+                  Learn more
+                </p>
                 <div
                   class="
                     rounded-full
                     bg-red-200
                     hover:bg-red-400
                     w-28
-                    h-2 mt-1 cursor-pointer
+                    h-2
+                    mt-1
+                    cursor-pointer
                   "
                 ></div>
               </a>
@@ -245,7 +258,7 @@
             </div>
           </div>
         </div>
-
+<!-- Grid inside a grid layout -->
         <div class="grid grid-flow-col grid-rows py-20 px-28">
           <div class="flex flex-col items-center p-4 pt-12 pb-16">
             <h1
@@ -376,7 +389,7 @@
             </div>
           </div>
         </div>
-
+<!-- The foooter section -->
         <div>
           <div class="py-6 bg-bg_footer">
             <div class="flex flex-col items-center px-5">
@@ -418,7 +431,7 @@
                   >Projects</a
                 >
               </div>
-
+<!-- Social media icons with hover effect -->
               <div
                 class="
                   flex
@@ -476,14 +489,18 @@
       </div>
     </section>
 
-    <!-- Mobile View Section -->
+    <!-- Mobile Design View Section -->
 
-    <section class="sm:visible md:hidden lg:hidden">
+
+    <!-- Hidden from large screen view, only visible on mobile devices -->
+    <section class="sm:visible md:hidden lg:hidden"> 
       <div class="">
         <img src="./images/mobile/image-header.jpg" alt="" />
       </div>
-
+<!-- Mobile navigation bar section -->
       <header class="absolute w-full top-0 mt-3 px-7 justify-between">
+
+        <!-- Using bootstrap class to implement the harmburger and dropdownmenu -->
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="font-body font-extrabold text-2xl block text-white">
             sunnyside
@@ -574,6 +591,7 @@
         </h1>
         <section>
           <div class="mt-16">
+            <!-- the arrow image -->
             <img
               src="./images/icon-arrow-down.svg"
               alt=""
@@ -597,9 +615,19 @@
             most of the marketing for you.
           </p>
           <div class="p-3 flex flex-col items-center">
-            <p class="learn z-40 mb-0" style="line-height: 0;">Learn more</p>
-            <div >
-              <div class="rounded-full hover:bg-yellow_hover bg-yellow-200 w-28 h-2 mt-1 cursor-pointer"></div>
+            <p class="learn z-40 mb-0" style="line-height: 0">Learn more</p>
+            <div>
+              <div
+                class="
+                  rounded-full
+                  hover:bg-yellow_hover
+                  bg-yellow-200
+                  w-28
+                  h-2
+                  mt-1
+                  cursor-pointer
+                "
+              ></div>
             </div>
           </div>
         </div>
@@ -616,8 +644,18 @@
           your brand in digital places.
         </p>
         <div class="p-3 flex flex-col items-center">
-          <p class="learn z-40 mb-0" style="line-height: 0;">Learn more</p>
-          <div class="rounded-full hover:bg-pink_hover bg-red-200 w-28 h-2 mt-1 cursor-pointer"></div>
+          <p class="learn z-40 mb-0" style="line-height: 0">Learn more</p>
+          <div
+            class="
+              rounded-full
+              hover:bg-pink_hover
+              bg-red-200
+              w-28
+              h-2
+              mt-1
+              cursor-pointer
+            "
+          ></div>
         </div>
       </div>
 
@@ -754,7 +792,7 @@
           <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="" />
         </div>
       </div>
-
+<!-- Footer section -->
       <div class="py-6 bg-bg_footer">
         <div class="flex flex-col items-center px-5">
           <h1 class="mt-8 text-footer_title_color font-extrabold text-3xl">
@@ -802,7 +840,7 @@
               >Projects</a
             >
           </div>
-
+<!-- Social media icons -->
           <div
             class="flex space-x-6 m-5 mb-16 text-xl text-gray-500 font-semibold"
           >
