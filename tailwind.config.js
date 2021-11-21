@@ -17,6 +17,9 @@ module.exports = {
         dark_grey: "hsl(213, 9%, 39%)",
         text_color: "hsl(210, 4%, 67%)",
         footer_nav_color: "hsl(168, 34%, 41%)",
+        contact_hover_color: "#6ecfff",
+        yellow_hover: "#ffd60e",
+        pink_hover: "#fe6c5f",
       }
       
     },
