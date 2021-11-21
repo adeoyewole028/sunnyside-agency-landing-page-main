@@ -100,9 +100,15 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Adegboyega Samuel Oyewole SH-IT-0075304
+- Chukwu Joseph  SH-IT-0107838
+- Osazuwa-Ojo Victory Osaruese  SH-IT-0087734
+- Afolabi Olanshile  SH-IT-006681
+- Adama Ojochege John Jnr  SH-IT-0029720
+- Kolapo Limah  SH-IT-0056971
+- Blessing Umana Eno  SH-IT-0097188
+- Onome Okosun  SH-IT-0081806
+- Omolusi Ayobami  SH-IT-0039919
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
